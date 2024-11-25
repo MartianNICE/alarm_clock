@@ -16,5 +16,6 @@ def alarm(seconds):
         print(f"{CLEAR_AND_RETURN}{time_left_minutes:02d}:{time_left_seconds:02d}")
 
     playsound("ringtone.mp3")
-
-alarm(10)
+minutes = int(input("How many minutes do you want to set the alarm for? "))
+seconds = int(input("How many seconds do you want to set the alarm for? "))
+alarm(minutes * 60 + seconds)
